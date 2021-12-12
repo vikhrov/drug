@@ -87,6 +87,7 @@ nav a {
   width: 60%;
   background-image: url(../img/ellipse1.png);
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .small-img img:nth-child(1) {
   position: relative;
@@ -127,6 +128,10 @@ button {
 }
 .plan {
   margin: 50px 50px 20px 100px;
+}
+.plan p:first-child {
+  font-size: 2em;
+  font-weight: bold;
 }
 .plan div {
   display: flex;
