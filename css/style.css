@@ -68,14 +68,13 @@ nav a {
   font-weight: bold;
 }
 .top {
-  margin-top: 90px;
   display: flex;
-  padding-left: 100px;
-  height: 650px;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 .top-left {
-  width: 35%;
+  width: 45%;
+  margin-left: 100px;
 }
 .top-left * {
   margin-bottom: 15px;
@@ -84,34 +83,12 @@ nav a {
   color: #171717;
 }
 
-.top-right {
-  height: 100%;
-  width: 60%;
-  background-image: url(../img/ellipse1.png);
-  background-repeat: no-repeat;
+.top img {
+  height: auto;
+  width: 45%;
   overflow: hidden;
 }
-.small-img img:nth-child(1) {
-  position: relative;
-  top: -300px;
-  left: 5%;
-}
-.small-img img:nth-child(2) {
-  position: relative;
-  top: -600px;
-  left: 30%;
-}
-.small-img img:nth-child(3) {
-  position: relative;
-  top: -500px;
-  left: 50%;
-}
 
-.small-img img:nth-child(4) {
-  position: relative;
-  bottom: -10%;
-  left: 5%;
-}
 button {
   background-color: #10495C;
   padding: 10px;
@@ -258,13 +235,15 @@ button {
   .logo {
     width: 70%;
   }
-  .top {
-    padding-left: 0;
-  }
+
   .top-left {
-    width: 40%;
+    margin-left: 5px;
   }
   .plan div div {
     width: 100%;
+  }
+  .plan {
+    margin: 10px;
+    margin-bottom: 50px;
   }
 }

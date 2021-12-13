@@ -19,7 +19,7 @@
 }
 .space {
   width: 100%;
-  height: 190px;
+  height: 150px;
 }
 footer {
   background-color: #fee46b;
@@ -51,7 +51,7 @@ footer ul li:first-child {
   margin-left: 100px;
 }
 .about div {
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 100px;
 }
 .about div p:first-child {
@@ -83,12 +83,18 @@ footer ul li:first-child {
   margin-left: auto;
   margin-right: auto;
 }
-.pets {
+.cards {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 150px;
   display: flex;
   justify-content: space-between;
+}
+.cards .team button {
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+  width: 50%;
 }
 .team {
   display: inline-block;
@@ -184,12 +190,69 @@ footer ul li:first-child {
   font-weight: 500;
   font-size: 20px;
 }
+.shop {
+  text-align: center;
+}
+.shop p:first-child {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+}
+.shop p:nth-child(2) {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+  margin-bottom: 50px;
+}
+.shop button {
+  margin: 0 auto;
+  display: block;
+}
+.shop p:nth-child(3) {
+  font-weight: 300;
+}
+.blog {
+  text-align: center;
+}
+.blog p:first-child {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+}
+.blog p:nth-child(2) {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+  margin-bottom: 50px;
+}
+.blog-img {
+  width: 100%;
+}
+.blog h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.blog .cards {
+  margin-top: 20px;
+}
+.blog p {
+  font-size: 13px;
+  font-weight: 300;
+}
 @media screen and (max-width: 920px) {
   .about img {
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .about div {
-    margin-right: 5px;
+    margin-right: 10px;
   }
   footer .logo {
     display: block;
@@ -213,8 +276,9 @@ footer ul li:first-child {
   .team {
     width: 45%;
   }
-  .pets {
+  .cards {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .support-card {
     flex-wrap: wrap;
