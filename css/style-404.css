@@ -11,6 +11,7 @@ main {
 body {
   background-image: url(../img/404-back.png);
   background-position: 50% 35%;
+  background-repeat: no-repeat;
 }
 nav {
     height: 90px;
