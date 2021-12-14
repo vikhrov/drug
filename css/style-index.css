@@ -53,6 +53,7 @@ footer ul li:first-child {
 .about div {
   margin-left: 5%;
   margin-right: 100px;
+  width: 50%;
 }
 .about div p:first-child {
   font-size: 32px;
@@ -79,7 +80,7 @@ footer ul li:first-child {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 15px;
   text-align: center;
-  width: 380px;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -243,6 +244,9 @@ footer ul li:first-child {
 .blog .cards {
   margin-top: 20px;
 }
+.blog .cards .team {
+  height: 500px;
+}
 .blog p {
   font-size: 13px;
   font-weight: 300;
@@ -285,15 +289,37 @@ footer ul li:first-child {
   .support-card {
     flex-wrap: wrap;
     justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .support-card .card {
     display: block;
     width: 90%;
     margin-right: 0;
   }
+  .our-pets p:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90%;
+  }
 }
 @media screen and (max-width: 600px) {
   .team {
     width: 90%;
+  }
+  .about button {
+    width: 90%;
+  }
+  header .logo {
+    padding-left: 40px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 420px) {
+  header .logo {
+    width: 90%;
+  }
+  .number {
+    display: none;
   }
 }
