@@ -24,7 +24,13 @@
   font-family: "Montserrat", sans-serif;
   margin-bottom: 15px;
 }
-
+.plan p:first-child {
+  .caption;
+}
+.plan div div p {
+  .text;
+  font-size: 15px;
+}
 .space {
   width: 100%;
   height: 150px;
@@ -245,6 +251,54 @@ footer ul li:first-child {
     font-weight: 300;
   }
 }
+footer .logo a {
+  text-decoration: none;
+}
+
+.history-second .top .top-left{
+  p:last-child {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 15px;
+    span {
+      color: #7FC6E4;
+      font-size: 50px;
+
+    }
+  }
+}
+
+.work {
+  text-align: center;
+  p:first-child {
+    .caption;
+  }
+  & p:nth-child(2) {
+    width: 50%;
+    margin: 0 auto;
+    .text;
+    margin-bottom: 50px;
+  }
+}
+.about-cards {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+.about-card {
+  width: 40%;
+  margin-bottom: 4em;
+  .text;
+  & p:nth-child(2) {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+}
 
 
 @media screen and (max-width: 920px) {
@@ -299,6 +353,12 @@ footer ul li:first-child {
     margin-right: 10px;
     width: 90%;
   }
+  .about-card {
+    width: 90%;
+  }
+  .about-cards {
+    width: 90%;
+  }
 
 }
 
@@ -312,6 +372,12 @@ footer ul li:first-child {
   header .logo {
     padding-left: 40px;
     width: 50%;
+  }
+  .history-second .top-left {
+    width: 90%;
+  }
+  .history-second img {
+    display: none;
   }
 }
 @media screen and (max-width: 420px) {
