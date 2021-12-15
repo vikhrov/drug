@@ -68,10 +68,12 @@ nav a {
   display: flex;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  justify-content: space-around;
 }
 .top-left {
   width: 45%;
   margin-left: 100px;
+  margin-right: 3%
 }
 .top-left * {
   margin-bottom: 15px;
@@ -84,6 +86,7 @@ nav a {
   height: auto;
   width: 45%;
   overflow: hidden;
+  margin-right: 100px;
 }
 
 button {
@@ -460,6 +463,9 @@ button {
   .accordion-block {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .top img {
+    margin-right: 10px;
   }
 }
 

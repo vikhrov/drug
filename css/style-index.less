@@ -98,6 +98,7 @@ footer ul li:first-child {
   margin-top: 200px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .cards .team button {
   position: absolute;
@@ -116,12 +117,18 @@ footer ul li:first-child {
     height: 400px;
     margin-right: 3%;
     padding: 38px;
-    margin-bottom: 100px;
+    margin-bottom: 12em;
 }
 
 .team:last-child {
     margin-right: 0;
-    margin-bottom: 30px;
+}
+.team:nth-child(3) {
+    margin-right: 0;
+}
+
+.team:nth-child(4), .team:nth-child(5), .team:nth-child(6) {
+    margin-bottom: 5em;
 }
 
 .team h3 {
@@ -141,6 +148,7 @@ footer ul li:first-child {
 .our-pets button {
   margin: 0 auto;
   display: block;
+  width: 200px;
 }
 
 .circle {
@@ -216,7 +224,7 @@ footer ul li:first-child {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.3);
-    width: 45%;
+    width: 30%;
     margin-left: 5%;
     margin-right: 100px;
     &>p {
@@ -281,7 +289,13 @@ footer ul li:first-child {
     margin-bottom: 50px;
   }
 }
-
+.slider-about {
+  margin-top: 5em;
+  & > p {
+    .caption;
+    text-align: center;
+  }
+}
 .blog-img {
   width: 100%;
 }
@@ -470,6 +484,9 @@ footer .logo a {
       display: inline-block;
     }
   }
+  .team:nth-child(3) {
+    margin-right: 3%;
+  }
 
 }
 
@@ -500,5 +517,8 @@ footer .logo a {
   }
   .map iframe:nth-child(3) {
     display: none;
+  }
+  .team {
+    margin-bottom: 7em;
   }
 }
