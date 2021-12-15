@@ -1,0 +1,94 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: #fff;
+  height: 500px;
+
+}
+body {
+  background-image: url(../img/404-back.png);
+  background-position: 50% 35%;
+  background-repeat: no-repeat;
+}
+nav {
+    height: 90px;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: #fff;
+    z-index: 1;
+}
+
+.logo {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  padding-left: 100px;
+}
+.logo h1 {
+  color: #17BFAB;
+  float: left;
+  margin-right: 5px;
+  font-size: 2em;
+  margin-left: 10px;
+}
+.logo img {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+.logo p {
+  font-size: 14px;
+}
+
+nav ul {
+  width: 50%;
+  text-align: right;
+  display: inline-block;
+  float: left;
+  height: 100%;
+}
+nav li {
+  display: inline-block;
+  font-size: 14px;
+  list-style-type: none;
+  margin-top: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+}
+.number {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+h2 {
+  margin-top: 150px;
+  text-align: center;
+  color: #4c6778;
+  font-size: 2em;
+}
+h3 {
+  text-align: center;
+  color: #4c6778;
+  font-size: 2em;
+}
+button {
+
+  margin-top: 20em;
+}
+.button {
+  text-align: center;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+}
