@@ -72,7 +72,16 @@ footer {
     .text;
     text-decoration: none;
     font-size: 14px;
+
   }
+}
+footer a {
+  text-decoration: none;
+}
+footer a li:hover {
+    color: #828282;
+    text-shadow: 4px 2px 5px;
+    transform: scale(1.2, 1.2);
 }
 footer div{
   display: flex;
@@ -121,6 +130,7 @@ footer ul > li:first-child {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 6em;
 }
 .our-pets .cards > .team:last-child, .our-pets .cards > .team:nth-child(3) {
   margin-right: 0;
@@ -128,11 +138,10 @@ footer ul > li:first-child {
 
 
 
-
 .cards {
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 150px;
+  // margin-top: 100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -143,6 +152,14 @@ footer ul > li:first-child {
   left: 25%;
   width: 50%;
 }
+.card {
+  transition: 0.3s linear;
+}
+.card:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
 .blog .cards .team button {
   bottom: 1em;
 }
@@ -158,6 +175,13 @@ footer ul > li:first-child {
     margin-right: 3%;
     padding: 38px;
     margin-bottom: 5em;
+    transition: 0.3s linear;
+    background-color: #fff;
+}
+.team:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .shop .team:last-child {
@@ -168,15 +192,15 @@ footer ul > li:first-child {
 }
 
 
-.shop .team:nth-child(4), .team:nth-child(5), .team:nth-child(6) {
-    margin-bottom: 5em;
-}
+// .shop .team:nth-child(4), .team:nth-child(5), .team:nth-child(6) {
+//     margin-bottom: 5em;
+// }
 
 .team h3 {
     font-size: 30px;
     color: #000;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 32%;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 20px;
 }
@@ -193,13 +217,11 @@ footer ul > li:first-child {
 }
 
 .circle {
-    width: 60%;
+    width: 50%;
     height: auto;
     border-radius: 50%;
     position: absolute;
-    left: 20%;
-    top: 0;
-    z-index: 1;
+    left: 25%;
     margin-top: -25%;
 }
 .support {
@@ -253,7 +275,7 @@ footer ul > li:first-child {
     width: 50%;
     margin: 0 auto;
     .text;
-    margin-bottom: 50px;
+    margin-bottom: 6em;
   }
 }
 .form {
@@ -345,6 +367,7 @@ footer ul > li:first-child {
 }
 .blog-img {
   width: 100%;
+  margin-top: -1em;
 }
 .blog {
   h3 {
@@ -354,12 +377,13 @@ footer ul > li:first-child {
   .cards {
     margin-top: 20px;
     .team {
-      height: 450px;
+      height: auto;
     }
   }
   p {
     font-size: 13px;
     font-weight: 300;
+    margin-bottom: 3em;
   }
 }
 footer .logo a {
@@ -480,6 +504,7 @@ footer .logo a {
   .team {
     width: 45%;
     margin-top: 50px;
+    margin-bottom: 2em;
   }
   .blog .team {
     margin-top: 0;
@@ -561,6 +586,7 @@ footer .logo a {
   }
   .about button {
     width: 90%;
+
   }
   header .logo {
     padding-left: 40px;
@@ -579,6 +605,7 @@ footer .logo a {
   }
   .about {
     flex-direction: column;
+    margin-bottom: 3em;
     & > div {
       width: 90%;
     }
@@ -600,6 +627,9 @@ footer .logo a {
       width: 90%;
     }
   }
+  .our-pets p:nth-child(2), .shop p:nth-child(2) {
+    margin-bottom: 4em;
+  }
 }
 @media screen and (max-width: 420px) {
   header nav {
@@ -617,9 +647,6 @@ footer .logo a {
   .map iframe:nth-child(3) {
     display: none;
   }
-  .team {
-    margin-bottom: 7em;
-  }
   .top {
     flex-direction: column;
   }
@@ -628,6 +655,12 @@ footer .logo a {
   }
   .top img {
     width: 70%;
+  }
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+  .our-pets p:nth-child(2), .shop p:nth-child(2) {
+    margin-bottom: 2em;
   }
 
 
