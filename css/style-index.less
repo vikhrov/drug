@@ -24,6 +24,26 @@
   font-family: "Montserrat", sans-serif;
   margin-bottom: 15px;
 }
+
+
+// Плавное появление
+.element-animation {
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+
+
+
+
+
 .plan p:first-child {
   .caption;
 }

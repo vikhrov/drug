@@ -41,6 +41,37 @@ nav {
   font-size: 14px;
 }
 
+
+/* аницмация кнопок */
+button:hover {
+	animation: bounce 1s;
+}
+
+
+/* аницмация кнопок */
+/* button {
+  position: relative;
+}
+button::after {
+	content:'';
+	position: absolute;
+	top: -5px;
+	right: 0;
+	width: 0;
+	height: 40px;
+	background-image: url(../img/paw-prints2.png);
+	transition: all 1s ease;
+  z-index: 0;
+}
+button:hover::after {
+	width: 100%;
+}
+button span {
+  z-index: 1;
+}
+ */
+
+
 nav ul {
   width: 48%;
   text-align: right;
@@ -434,6 +465,23 @@ button {
 }
 
 /* аккордион */
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
 
 @media screen and (max-width: 920px) {
   .menu__btn {

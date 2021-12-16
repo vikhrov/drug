@@ -51,66 +51,66 @@
   <div class="history">
     <div class="top">
       <div class="top-left">
-        <h1>Самые свежие новости о фонде и советы для хозяев</h1>
-        <p>Для всех, кому небезразлична судьба бездомных животных. Возьмите животных в добрые руки и станьте для них вторым шансом!</p>
+        <h1 class="element-animation">Самые свежие новости о фонде и советы для хозяев</h1>
+        <p class="element-animation">Для всех, кому небезразлична судьба бездомных животных. Возьмите животных в добрые руки и станьте для них вторым шансом!</p>
       </div>
       <img src="img/blog-main.png" alt="">
     </div>
   </div>
 
   <div class="blog">
-    <p>Блог</p>
-    <p>Самые свежие новости и советы для хозяев</p>
+    <p class="element-animation">Блог</p>
+    <p class="element-animation">Самые свежие новости и советы для хозяев</p>
     <div class="cards">
-      <div class="team">
+      <div class="team element-animation">
           <img src="img/blog1.png" class="blog-img">
           <h3>Плюсы и минусы стерилизации</h3>
           <p>Плюсы стерилизации кошек очевидны, когда речь заходит и об их поведении. Так, животные, не прошедшие через ...</p>
           <a href="blog.html"><button style="background: #fee46b; border: none">Подробнее</button></a>
       </div>
-      <div class="team">
+      <div class="team element-animation">
           <img src="img/blog2.png" class="blog-img">
           <h3>Плюсы и минусы стерилизации</h3>
           <p>Плюсы стерилизации кошек очевидны, когда речь заходит и об их поведении. Так, животные, не прошедшие через ...</p>
           <a href="blog.html"><button style="background: #fee46b; border: none">Подробнее</button></a>
       </div>
-      <div class="team">
+      <div class="team element-animation">
           <img src="img/blog3.png" class="blog-img">
           <h3>Плюсы и минусы стерилизации</h3>
           <p>Плюсы стерилизации кошек очевидны, когда речь заходит и об их поведении. Так, животные, не прошедшие через ...</p>
           <a href="blog.html"><button style="background: #fee46b; border: none">Подробнее</button></a>
       </div>
-      <div class="team block_with_text hiden">
+      <div class="team block_with_text hiden element-animation">
           <img src="img/blog4.png" class="blog-img">
           <h3>Плюсы и минусы стерилизации</h3>
           <p>Плюсы стерилизации кошек очевидны, когда речь заходит и об их поведении. Так, животные, не прошедшие через ...</p>
           <a href="blog.html"><button style="background: #fee46b; border: none">Подробнее</button></a>
       </div>
-      <div class="team block_with_text hiden">
+      <div class="team block_with_text hiden element-animation">
           <img src="img/blog5.png" class="blog-img">
           <h3>Как дрессировать животных</h3>
           <p>В вопросе воспитания собак многие люди полагаются на собственные силы, считая, что обладают достаточными знаниями...</p>
           <a href="blog.html"><button style="background: #fee46b; border: none">Подробнее</button></a>
       </div>
-      <div class="team block_with_text hiden">
+      <div class="team block_with_text hiden element-animation">
           <img src="img/blog6.png" class="blog-img">
           <h3>Питание кастрированной собаки</h3>
           <p>Существует мнение, что после кастрации животное необходимо перевести на специальное питание, но это не всегда так...</p>
           <a href="blog.html"><button style="background: #fee46b; border: none">Подробнее</button></a>
       </div>
-      <div class="team block_with_text hiden">
+      <div class="team block_with_text hiden element-animation">
           <img src="img/blog7.png" class="blog-img">
           <h3>Вы решили завести котёнка?</h3>
           <p>Перед тем как завести котёнка, необходимо всё продумать и подготовиться.Заводить животное лучше...</p>
           <a href="blog.html"><button style="background: #fee46b; border: none">Подробнее</button></a>
       </div>
-      <div class="team block_with_text hiden">
+      <div class="team block_with_text hiden element-animation">
           <img src="img/blog8.png" class="blog-img">
           <h3>Как правильно гулять с собакой</h3>
           <p>Какие вопросы обычно задают себе люди, принимая решение завести собаку? Хватит ли сил и времени на...</p>
           <a href="blog.html"><button style="background: #fee46b; border: none">Подробнее</button></a>
       </div>
-      <div class="team block_with_text hiden">
+      <div class="team block_with_text hiden element-animation">
           <img src="img/blog9.png" class="blog-img">
           <h3>С чего начать воспитание щенка</h3>
           <p>О воспитании щенков написано море литературы, и, как правило, все будущие владельцы собак её тщательно изучают...</p>
@@ -120,7 +120,7 @@
     <button class="btn">Загрузить еще</button>
   </div>
 
-  <div class="form">
+  <div class="form element-animation">
     <img src="img/form5.png" alt="">
     <div class="form-block">
       <p>Остались вопросы?</p>
@@ -194,5 +194,23 @@
     </div>
 
   </footer>
+  <script>
+  function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+       change.target.classList.add('element-show');
+      }
+    });
+  }
+
+  let options = {
+    threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.element-animation');
+
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+  </script>
 </body>
 </html>

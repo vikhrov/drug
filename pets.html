@@ -49,8 +49,8 @@
   <div class="history">
     <div class="top">
       <div class="top-left">
-        <h1>Этим хвостам нужна любовь и забота</h1>
-        <p>Более 20 собак и 40 котов ждут, когда человек с добрым сердцем заберёт их к себе домой. Подарите им шанс стать нужными и любимыми животными.</p>
+        <h1 class="element-animation">Этим хвостам нужна любовь и забота</h1>
+        <p class="element-animation">Более 20 собак и 40 котов ждут, когда человек с добрым сердцем заберёт их к себе домой. Подарите им шанс стать нужными и любимыми животными.</p>
       </div>
       <img src="img/pets1.png" alt="">
     </div>
@@ -67,44 +67,44 @@
     <div class="cards">
       <div class="team">
           <img src="img/pet1.png" class="circle">
-          <h3>Мася</h3>
-          <p>Девочка / 9 месяцев</p>
-          <p>Настоящий дворянин ищет семью, которая оценит его душевные качества</p>
+          <h3 class="element-animation">Мася</h3>
+          <p class="element-animation">Девочка / 9 месяцев</p>
+          <p class="element-animation">Настоящий дворянин ищет семью, которая оценит его душевные качества</p>
           <button type="button" name="button">Забрать</button>
       </div>
       <div class="team">
           <img src="img/pet2.png" class="circle">
-          <h3>Дружок</h3>
-          <p>Мальчик / 1 год</p>
-          <p>Крупный, общительный и просто клёвый пёс. Он ждет своих хозяев!</p>
+          <h3 class="element-animation">Дружок</h3>
+          <p class="element-animation">Мальчик / 1 год</p>
+          <p class="element-animation">Крупный, общительный и просто клёвый пёс. Он ждет своих хозяев!</p>
           <button type="button" name="button">Забрать</button>
       </div>
       <div class="team">
           <img src="img/pet3.png" class="circle">
-          <h3>Куки</h3>
-          <p>Мальчик / 3 месяца</p>
-          <p>Нежный, но в то же время игривый. В поисках верного и понимающего друга</p>
+          <h3 class="element-animation">Куки</h3>
+          <p class="element-animation">Мальчик / 3 месяца</p>
+          <p class="element-animation">Нежный, но в то же время игривый. В поисках верного и понимающего друга</p>
           <button type="button" name="button">Забрать</button>
       </div>
       <div class="team">
           <img src="img/pet4.png" class="circle">
-          <h3>Сакура</h3>
-          <p>Девочка / 1 год</p>
-          <p>Веселый парень, всего 40 см в холке. Любопытный и легкий на подъем</p>
+          <h3 class="element-animation">Сакура</h3>
+          <p class="element-animation">Девочка / 1 год</p>
+          <p class="element-animation">Веселый парень, всего 40 см в холке. Любопытный и легкий на подъем</p>
           <button type="button" name="button">Забрать</button>
       </div>
       <div class="team">
           <img src="img/pet5.png" class="circle">
-          <h3>Кузя</h3>
-          <p>Мальчик / 3 месяца</p>
-          <p>Скромный, но брутальный мужчина готов к переезду в ваш дом!</p>
+          <h3 class="element-animation">Кузя</h3>
+          <p class="element-animation">Мальчик / 3 месяца</p>
+          <p class="element-animation">Скромный, но брутальный мужчина готов к переезду в ваш дом!</p>
           <button type="button" name="button">Забрать</button>
       </div>
       <div class="team">
           <img src="img/pet6.png" class="circle">
-          <h3>Борис</h3>
-          <p>Мальчик / 1 год</p>
-          <p>Собака-терапевт, спасёт от хандры и скрасит ваши понедельники</p>
+          <h3 class="element-animation">Борис</h3>
+          <p class="element-animation">Мальчик / 1 год</p>
+          <p class="element-animation">Собака-терапевт, спасёт от хандры и скрасит ваши понедельники</p>
           <button type="button" name="button">Забрать</button>
       </div>
     </div>
@@ -112,7 +112,7 @@
   </div>
   <div class="slider-about">
     <p>Наши счастливчики</p>
-    <div class="slider">
+    <div class="slider element-animation">
       <div class="slider__wrapper">
         <div class="slider__items">
           <div class="slider__item">
@@ -144,7 +144,7 @@
   </div>
 
 
-  <div class="form">
+  <div class="form element-animation">
     <img src="img/form3.png" alt="">
     <div class="form-block">
       <p>Остались вопросы?</p>
@@ -242,6 +242,24 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
+}
+</script>
+<script>
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for (let elm of elements) {
+  observer.observe(elm);
 }
 </script>
 

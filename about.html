@@ -49,8 +49,8 @@
   <div class="history">
     <div class="top">
       <div class="top-left">
-        <h1>Наша история и наши планы</h1>
-        <p>Для всех, кому небезразлична судьба бездомных животных. Возьмите животных в добрые руки и станьте для них вторым шансом!</p>
+        <h1 class="element-animation">Наша история и наши планы</h1>
+        <p class="element-animation">Для всех, кому небезразлична судьба бездомных животных. Возьмите животных в добрые руки и станьте для них вторым шансом!</p>
       </div>
       <img src="img/about-main-cat.png" alt="">
     </div>
@@ -59,11 +59,11 @@
   <div class="history-second">
     <div class="top">
       <div class="top-left">
-        <h1>Наша история</h1>
-        <p>“Друг” - крупнейший приют для бездомных животних в Украины. Был создан в 2000году в г. Краматорск.</p>
-        <p>С тех пор мы стерилизуем и находим постоянный дом собакам и кошкам, помогая гуманно решать проблему огромного количества бездомных животных.</p>
-        <p>Сейчас в приюте "Друг" проживает около 3000 собак и котов. За годы существования приюта более 5000 животных нашли свой дом.</p>
-        <p><span>&#34;</span>Все животные приюта обязательно стерилизуются, также оказывается помощь в стерилизации бездомных и домашних животных малообеспеченным семьям в г. Крамоторска и ближайших населенных пунктах Донецкой области.</p>
+        <h1 class="element-animation">Наша история</h1>
+        <p class="element-animation">“Друг” - крупнейший приют для бездомных животних в Украины. Был создан в 2000году в г. Краматорск.</p>
+        <p class="element-animation">С тех пор мы стерилизуем и находим постоянный дом собакам и кошкам, помогая гуманно решать проблему огромного количества бездомных животных.</p>
+        <p class="element-animation">Сейчас в приюте "Друг" проживает около 3000 собак и котов. За годы существования приюта более 5000 животных нашли свой дом.</p>
+        <p class="element-animation"><span>&#34;</span>Все животные приюта обязательно стерилизуются, также оказывается помощь в стерилизации бездомных и домашних животных малообеспеченным семьям в г. Крамоторска и ближайших населенных пунктах Донецкой области.</p>
       </div>
       <img src="img/about2.png" alt="">
     </div>
@@ -71,7 +71,7 @@
   <div class="space"></div>
 
 
-  <div class="work">
+  <div class="work element-animation">
     <p>Чем мы занимаемся</p>
     <p>Здесь вы можете узнать основные задание которыми занимается наш фонд</p>
     <div class="about-cards">
@@ -101,7 +101,7 @@
 
 <!-- Слайдер -->
 
-  <div class="slider">
+  <div class="slider element-animation">
     <div class="slider__wrapper">
       <div class="slider__items">
         <div class="slider__item">
@@ -134,7 +134,7 @@
 <!-- Слайдер -->
 
 <!-- аккордион -->
-<div class="accordion-block">
+<div class="accordion-block element-animation">
   <p>Ответы на вопросы</p>
   <p>Здесь вы можете узнать ответы на самые распространенные вопросы</p>
   <button class="accordion">Нужно ли прививать животных после того как забрали их с приюта?</button>
@@ -156,7 +156,7 @@
 </div>
 
 <!-- аккордион -->
-  <div class="contact">
+  <div class="contact element-animation">
     <p>Контакты</p>
     <p>Здесь вы можете узнать где мы находимся и наши контакты</p>
     <div class="map">
@@ -176,7 +176,7 @@
 
 
 <!-- форма -->
-<div class="form">
+<div class="form element-animation">
   <img src="img/form2.png" alt="">
   <div class="form-block">
     <p>Остались вопросы?</p>
@@ -271,6 +271,24 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
+}
+</script>
+<script>
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for (let elm of elements) {
+  observer.observe(elm);
 }
 </script>
 
