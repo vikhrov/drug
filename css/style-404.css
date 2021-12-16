@@ -10,10 +10,11 @@ main {
 }
 body {
   background-image: url(../img/404-back.png);
-  background-position: 50% 35%;
+  background-size: contain;
+  /* background-position: 40% 150%; */
   background-repeat: no-repeat;
 }
-nav {
+/* nav {
     height: 90px;
     width: 100%;
     padding: 10px;
@@ -22,9 +23,9 @@ nav {
     box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
     background-color: #fff;
     z-index: 1;
-}
+} */
 
-.logo {
+/* .logo {
   display: inline-block;
   width: 25%;
   float: left;
@@ -69,7 +70,7 @@ nav a {
   margin-top: 20px;
   margin-left: 10px;
   font-weight: bold;
-}
+} */
 h2 {
   margin-top: 150px;
   text-align: center;

@@ -23,7 +23,7 @@
       </div>
       <ul>
         <li><a href="index.html">Главная</a></li>
-        <li><a href="about.html">О нас</a></li>
+        <li class="active-menu"><a href="about.html">О нас</a></li>
         <li><a href="pets.html">Наши подопечные</a></li>
         <li><a href="support.html">Как помочь</a></li>
         <li><a href="blog.html">Блог</a></li>
@@ -38,8 +38,8 @@
       </label>
       <ul class="menu__box">
         <li><a class="menu__item" href="index.html">Главная</a></li>
-        <li><a class="menu__item" href="about.html">О нас</a></li>
-        <li><a class="menu__item" href="pens.html">Наши подопечные</a></li>
+        <li><a class="menu__item active-item" href="about.html">О нас</a></li>
+        <li><a class="menu__item" href="pets.html">Наши подопечные</a></li>
         <li><a class="menu__item" href="support.html">Как помочь</a></li>
         <li><a class="menu__item" href="blog.html">Блог</a></li>
       </ul>
@@ -144,12 +144,12 @@
 
   <button class="accordion">Как мы ухаживаем за животными которые к нам поступили?</button>
   <div class="panel">
-    <p>Животные получают необходимую медицинскую помощь, правильное питание. И конечно любовь и заботу</p>
+    <p>Домашние животные не смогут быть счастливыми и здоровыми без постоянного и правильного ухода. Внимание уделяется не только состоянию шерсти и когтей, но и питанию, наличию в рационе витаминов, прививкам, профилактике блох, клещей и различных паразитов. Каждое домашнее животное имеет свою особенность здорового содержания, но прибегать к услугам ветеринара, в качестве профилактики необходимо каждому хотя бы раз в год. Наиболее распространёнными домашними питомцами считаются собаки и кошки,поэтому о здоровом уходе данной категории мы и поговорим</p>
   </div>
 
   <button class="accordion">Какие документы есть у животных?</button>
   <div class="panel">
-    <p>Наши животные получают полный необходимый пакет документов.</p>
+    <p>Документы котят, передаваемые новым владельцам вместе с котенком, можно разделить на три вида: племенные, ветеринарные и договор передачи либо купли-продажи. Ветеринарный паспорт (ветеринарная книжка) обязателен для каждого котенка, возраст которого превышает 3 месяца.</p>
   </div>
   <button type="button">Задать вопрос</button>
 
@@ -207,46 +207,46 @@
 <!-- форма -->
 
 
-  <footer>
-    <div class="logo">
-      <a href="index.html">
-        <h1>Друг</h1>
-        <img src="img/dog1.svg" alt="">
-        <p>благотворительный фонд</p>
-      </a>
+<footer>
+  <div class="logo">
+    <a href="index.html">
+      <h1>Друг</h1>
+      <img src="img/dog1.svg" alt="">
+      <p>благотворительный фонд</p>
+    </a>
+  </div>
+  <div>
+    <div>
+      <ul>
+        <li>Наши подопечные</li>
+        <a href="pets.html"><li>Кошки</li></a>
+        <a href="pets.html"><li>Собаки</li></a>
+        <a href="pets.html"><li>Другие животные</li></a>
+      </ul>
     </div>
     <div>
-      <div>
-        <ul>
-          <li>Наши подопечные</li>
-          <li>Кошки</li>
-          <li>Собаки</li>
-          <li>Другие животные</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Как помочь</li>
-          <li>Волонтерство</li>
-          <li>Взять питомца</li>
-          <li>Пожертвование</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Наш фонд</li>
-          <li>О нас</li>
-          <li>Клнтакты</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Полезная информация</li>
-          <li>Блог</li>
-        </ul>
-      </div>
+      <ul>
+        <li>Как помочь</li>
+        <a href="support.html"><li>Волонтерство</li></a>
+        <a href="support.html"><li>Взять питомца</li></a>
+        <a href="support.html"><li>Пожертвование</li></a>
+      </ul>
     </div>
-  </footer>
+    <div>
+      <ul>
+        <li>Наш фонд</li></a>
+        <a href="about.html"><li>О нас</li></a>
+        <a href="about.html"><li>Контакты</li></a>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>Полезная информация</li>
+        <a href="blog.html"><li>Блог</li></a>
+      </ul>
+    </div>
+  </div>
+</footer>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       // инициализация слайдера
