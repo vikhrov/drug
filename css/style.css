@@ -153,16 +153,25 @@ button {
   color: #000;
 }
 .plan {
-  margin: 50px 50px 20px 100px;
+  margin: 50px 100px 20px 100px;
 }
 
 .plan div {
   display: flex;
   margin-top: 20px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .plan div div {
   width: 30%;
+  justify-content: flex-end;
+}
+.plan div div:first-child {
+  width: 30%;
+  justify-content: flex-start;
+}
+.plan div div:nth-child(2) {
+  width: 30%;
+  justify-content: center;
 }
 .plan div div p {
   margin-top: 10px;
@@ -513,6 +522,12 @@ button {
     margin-left: 5px;
   }
   .plan div div {
+    width: 100%;
+  }
+  .plan div div:first-child {
+    width: 100%;
+  }
+  .plan div div:nth-child(2) {
     width: 100%;
   }
   .plan {
